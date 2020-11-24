@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Home Table View Controller-->
         <scene sceneID="RSE-Un-r8c">
             <objects>
-                <tableViewController id="cvE-Z3-ctk" sceneMemberID="viewController">
+                <tableViewController id="cvE-Z3-ctk" customClass="HomeTableViewController" customModule="MemoryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PFI-CU-tCJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +51,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vho-Di-cJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="550.72463768115949" y="-16.071428571428569"/>
+        </scene>
+        <!--MemoryItemDetails-->
+        <scene sceneID="iMW-zN-wWW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MemoryItemDetails" id="I5o-YQ-4G0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dZb-q6-iOY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQr-4I-MoT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="-16"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Ka-4W-LTz">
