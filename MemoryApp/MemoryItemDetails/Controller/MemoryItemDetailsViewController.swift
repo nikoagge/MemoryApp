@@ -20,12 +20,12 @@ class MemoryItemDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         assert(memoryItem != nil, "You must provide a memory item before trying to show this ViewController.")
-        showText()
+        memoryItemDetailsTextView.attributedText = showText(for: memoryItem)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(wordsTapped))
         memoryItemDetailsTextView.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    private func showText() {
+    private func showText(for memoryItem: MemoryItem) -> NSAttributedString {
         let words = memoryItem.text.components(separatedBy: " ")
         let output = NSMutableAttributedString()
         let space = NSAttributedString(string: " ", attributes: visibleTextAttributes)
@@ -54,11 +54,11 @@ class MemoryItemDetailsViewController: UIViewController {
             output.append(space)
         }
         
-        memoryItemDetailsTextView.attributedText = output
+        return output
     }
     
     @objc private func wordsTapped() {
         blankCounter += 1
-        showText()
+        memoryItemDetailsTextView.attributedText = showText(for: memoryItem)
     }
 }

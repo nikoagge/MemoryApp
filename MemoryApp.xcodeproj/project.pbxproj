@@ -17,6 +17,7 @@
 		17521A04256C3C9900E17724 /* MemoryItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 17521A03256C3C9900E17724 /* MemoryItems.json */; };
 		17521A0C256C449300E17724 /* MemoryItemDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17521A0B256C449300E17724 /* MemoryItemDetails.storyboard */; };
 		17521A0F256C44CD00E17724 /* MemoryItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17521A0E256C44CD00E17724 /* MemoryItemDetailsViewController.swift */; };
+		17E16602256DAF97002F49C5 /* MemoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E16601256DAF97002F49C5 /* MemoryDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		17521A03256C3C9900E17724 /* MemoryItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MemoryItems.json; sourceTree = "<group>"; };
 		17521A0B256C449300E17724 /* MemoryItemDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoryItemDetails.storyboard; sourceTree = "<group>"; };
 		17521A0E256C44CD00E17724 /* MemoryItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryItemDetailsViewController.swift; sourceTree = "<group>"; };
+		17E16601256DAF97002F49C5 /* MemoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				17521A03256C3C9900E17724 /* MemoryItems.json */,
+				17E16601256DAF97002F49C5 /* MemoryDataSource.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				17521A0F256C44CD00E17724 /* MemoryItemDetailsViewController.swift in Sources */,
 				175219DB256C369C00E17724 /* SceneDelegate.swift in Sources */,
 				17521A00256C3AC200E17724 /* MemoryItem.swift in Sources */,
+				17E16602256DAF97002F49C5 /* MemoryDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
